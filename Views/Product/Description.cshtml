@@ -1,0 +1,15 @@
+﻿@model Product;
+
+@{
+    if (Model != null)
+    {
+        <h1>@Model.Name</h1>
+        <p>Description: @Model.Description</p>
+        <p>Category: @Model.Category</p>
+        <p>Price: $@Model.Price</p>
+    }
+    else
+    {
+        <h1>No drinks in stock - sold out!</h1>
+    }
+}
