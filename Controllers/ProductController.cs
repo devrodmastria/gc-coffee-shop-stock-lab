@@ -19,6 +19,11 @@ namespace CoffeShopListLab_Solution.Controllers
             return View(products);
         }
 
+        public IActionResult Return() {
+        
+            return RedirectToAction("ProductList");
+        }
+
         [HttpGet]
         public IActionResult Description(int coffeeId)
         {
